@@ -1,0 +1,19 @@
+a=input()
+b=1
+for i in range(len(a)):
+   if(i==len(a)-1):
+       if(b>1):
+           print(a[i],end="")
+           print(b,end="")
+       else:
+          print(a[i],end="")
+       break
+   if(a[i]==a[i+1]):
+       b+=1
+   else:
+       if(b>1):
+           print(a[i],end="");
+           print(b,end="");
+           b=1
+       else:
+           print(a[i],end="")
